@@ -7,12 +7,6 @@ public class CalculateSalary {
 	
     public static void main(String[] args){
 			
-		/*private double dayPayment;
-		double basicSalary = 0;
-		double finalSalary = 0;
-		double allowances = 0;			
-		private int numOfDays;*/			
-		
 		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 		
 		//get dayPayment & numOfDays from user
@@ -63,7 +57,7 @@ class AllowancesThread2 implements Runnable {
 		this.basicSalary = basicSalary;
 	}
 	
-	@Override
+    @Override
     public void run() {
 		// calculate allowances
 		double allowances = basicSalary * 0.05;
